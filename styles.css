@@ -1,3 +1,56 @@
+:root {
+    --royal-purple: #6a0dad;
+    --gold: #ffd700;
+    --dark-crown:  #4b0082;
+
+}
+
+body {
+    background: #f9f3ff; 
+    font-family:'arial', sans-serif;
+} 
+
+.royal-header, .royal-footer {
+    background: linear-gradient(to right, var(--royal-purple), var(--darkcrown));
+    color: white;
+    padding: 2rem;
+    text-align: center;
+
+}
+
+
+.royal-selection {
+    background: white ;
+    border-radius: 15px;
+    box-shadow: 0 5px 15 px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
+
+}
+
+.royal-button {
+    background: var(--gold);
+    border:none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#dont-click:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -18,11 +71,52 @@ header {
     font-style: italic;
 }
 
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;;
+}
+
+.pug-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50;
+    object-fit: cover;
+    border: 3px solid gold;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.pug-title {
+    color: #f90;
+    font-style: italic;
+}
+
+.bio-text { 
+    flex: 1;
+}
+
 .profile-pic {
     width: 200px;
+    height: 200px;
     border-radius: 50%;
+    object-fit: cover;
+    display: block;
     margin: 20px;
+    border: 3px solid gold;
 }
+
+.profile-pic ::after {
+    content: "👑";
+    position: absalute;
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+
+} 
 
 section {
     padding: 20px;
@@ -37,4 +131,27 @@ footer {
     padding: 20px;
     background: #35424a;
     color: white;
+}
+
+.highlight {
+    background: yellow;
+    padding: 2px 5px;
+    font-weight: bold;
+}
+
+.skills-list li {
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+.emoji {
+    font-size: 1.5;
+}
+
+#dont-click {
+    background: red;
+    color: white;
+    border:none;
+    padding: 3px 8px;
+    cursor: pointer;
 }
