@@ -38,19 +38,25 @@ body {
     cursor: pointer;
 }
 
+#dont-clicl:hover {
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0deg); }
+    25% { transform: translateX(5deg); }
+    50% { transform: translateX(-5deg); }
+    75% { transform: translateX(5deg); }
+    100% { transform: translateX(0deg); }
+}
+
 #dont-click:hover {
     transform: scale(1.1);
 }
-
-
-
-
-
-
-
-
-
-
+.royal-button:hover {
+    background: var(--dark-crown);
+    color: white;
+}
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
